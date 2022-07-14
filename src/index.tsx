@@ -284,18 +284,18 @@ export const ExpandableListView: React.FC<Props> = ({data,innerItemLabelStyle,re
     let CustomComponent = item.customInnerItem;
 
     let container = {
-      ...styles.content,
+      // ...styles.content,
       ...innerItemContainerStyle,
       height: undefined,
     };
     innerItemLabelStyle = {
-      ...styles.text,
+      // ...styles.text,
       ...innerItemLabelStyle,
       height: undefined,
     };
 
     innerItemSeparatorStyle = {
-      ...styles.innerItemSeparator,
+      // ...styles.innerItemSeparator,
       ...innerItemSeparatorStyle,
     };
 
@@ -331,22 +331,22 @@ export const ExpandableListView: React.FC<Props> = ({data,innerItemLabelStyle,re
   function renderItem({item, index}: ExpandableListItem) {
 
     itemContainerStyle = {
-      ...styles.header,
+      // ...styles.header,
       ...itemContainerStyle,
       height: undefined,
     };
     itemLabelStyle = {
-      ...styles.headerText,
+      // ...styles.headerText,
       ...itemLabelStyle,
     };
     itemImageIndicatorStyle = {
-      height: 15,
-      width: 15,
-      marginHorizontal: 5,
+      // height: 15,
+      // width: 15,
+      // marginHorizontal: 5,
       ...itemImageIndicatorStyle,
     };
 
-    itemSeparatorStyle = {...styles.headerSeparator, ...itemSeparatorStyle};
+    itemSeparatorStyle = { ...itemSeparatorStyle};
 
     let CustomComponent = item.customItem;
     return (
